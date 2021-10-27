@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+       <title>SCORE CRUD</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script type="text/javascript" src="js/funcionesScore.js"></script>
+       <style>
+        table, th, td {
+          border: 3px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+        
+   </head> 
+   <body>
+      <h1>ROOM page</h1>
+      <div id="resultado"></div>
+      <button onclick="traerInformacionScore()">Consultar</button>
+      <br>
+      <br>
+      <div>
+          <input type="text" id="messageText" placeholder="messageText">
+          <input type="number" id="stars" placeholder="stars">
+      </div>
+      <br>
+      <button onclick="guardarInformacionScore()">Guardar!</button>
+      <br>
+      <button onclick="editarScore()">Actualizar!</button>
+      <br>
+      <a href="index.html">Regresar pagina principal</a>
+
+   </body>
+</html>

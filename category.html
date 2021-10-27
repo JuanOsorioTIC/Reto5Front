@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+       <title>CATEGORY CRUD</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script type="text/javascript" src="js/funcionesCategory.js"></script>
+       <style>
+        table, th, td {
+          border: 3px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+        
+   </head> 
+   <body>
+      <h1>CATEGORY page</h1>
+      <div id="resultado"></div>
+      <button onclick="traerInformacionCategory()">Consultar</button>
+      <br>
+      <br>
+      <div>
+          <input type="text" id="name" placeholder="name">
+          <input type="text" id="description" placeholder="description">
+      </div>
+      <br>
+      <button onclick="guardarInformacionCategory()">Guardar!</button>
+      <br>
+      <a href="index.html">Regresar pagina principal</a>
+
+   </body>
+</html>
