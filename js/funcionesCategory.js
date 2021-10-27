@@ -1,7 +1,7 @@
 function traerInformacionCategory(){
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Category/all",
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://158.101.116.30:8080/api/Category/all",
+        //url:"http://localhost:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -44,8 +44,8 @@ function guardarInformacionCategory(){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-            //url:"http://158.101.116.30:8080/api/Category/save",
-            url:"http://localhost:8080/api/Category/save",
+            url:"http://158.101.116.30:8080/api/Category/save",
+            //url:"http://localhost:8080/api/Category/save",
             
             type:'POST',
             contentType: "application/json; charset=utf-8",
@@ -72,8 +72,8 @@ function editarCategory(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Category/update",
-        url:"http://localhost:8080/api/Category/update",
+        url:"http://158.101.116.30:8080/api/Category/update",
+        //url:"http://localhost:8080/api/Category/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -95,8 +95,8 @@ function eliminarCategory(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Category/" + idElemento,
-        url:"http://localhost:8080/api/Category/"  + idElemento,
+        url:"http://158.101.116.30:8080/api/Category/" + idElemento,
+        //url:"http://localhost:8080/api/Category/"  + idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
