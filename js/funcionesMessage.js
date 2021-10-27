@@ -1,7 +1,7 @@
 function traerInformacionMensaje(){
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Message/all",
-        url:"http://localhost:8080/api/Message/all",
+        url:"http://158.101.116.30:8080/api/Message/all",
+        //url:"http://localhost:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -41,8 +41,8 @@ function guardarInformacionMensaje(){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Message/save",
-        url:"http://localhost:8080/api/Message/save",
+        url:"http://158.101.116.30:8080/api/Message/save",
+        //url:"http://localhost:8080/api/Message/save",
        
         type:'POST',
         contentType: "application/json; charset=utf-8",
@@ -66,8 +66,8 @@ function editarMensaje(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Message/update",
-        url:"http://localhost:8080/api/Message/update",
+        url:"http://158.101.116.30:8080/api/Message/update",
+        //url:"http://localhost:8080/api/Message/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -88,8 +88,8 @@ function eliminarMensaje(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Message/" + idElemento,
-        url:"http://localhost:8080/api/Message/" + idElemento,
+        url:"http://158.101.116.30:8080/api/Message/" + idElemento,
+        //url:"http://localhost:8080/api/Message/" + idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
