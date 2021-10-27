@@ -1,7 +1,7 @@
 function traerInformacionAdmin(){
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Admin/all",
-        url:"http://localhost:8080/api/Admin/all",
+        url:"http://158.101.116.30:8080/api/Admin/all",
+        //url:"http://localhost:8080/api/Admin/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -47,8 +47,8 @@ function guardarInformacionAdmin(){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Admin/save",
-        url:"http://localhost:8080/api/Admin/save",
+        url:"http://158.101.116.30:8080/api/Admin/save",
+        //url:"http://localhost:8080/api/Admin/save",
         type:"POST",
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
@@ -74,8 +74,8 @@ function editarAdmin(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Admin/update",
-        url:"http://localhost:8080/api/Admin/update",
+        url:"http://158.101.116.30:8080/api/Admin/update",
+        //url:"http://localhost:8080/api/Admin/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -99,8 +99,8 @@ function eliminarAdmin(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Admin/" + idElemento,
-        url:"http://localhost:8080/api/Admin/" + idElemento,
+        url:"http://158.101.116.30:8080/api/Admin/" + idElemento,
+        //url:"http://localhost:8080/api/Admin/" + idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
