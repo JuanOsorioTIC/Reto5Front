@@ -1,7 +1,7 @@
 function traerInformacionCuarto(){
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Room/all",
-        url:"http://localhost:8080/api/Room/all",
+        url:"http://158.101.116.30:8080/api/Room/all",
+        //url:"http://localhost:8080/api/Room/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -50,8 +50,8 @@ function guardarInformacionCuarto(){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Room/save",
-        url:"http://localhost:8080/api/Room/save",    
+        url:"http://158.101.116.30:8080/api/Room/save",
+        //url:"http://localhost:8080/api/Room/save",    
         type:'POST',
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
@@ -80,8 +80,8 @@ function editarCuarto(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Room/update",
-        url:"http://localhost:8080/api/Room/update", 
+        url:"http://158.101.116.30:8080/api/Room/update",
+        //url:"http://localhost:8080/api/Room/update", 
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -106,8 +106,8 @@ function eliminarCuarto(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Room/ + idElemento",
-        url:"http://localhost:8080/api/Room/" + idElemento, 
+        url:"http://158.101.116.30:8080/api/Room/ + idElemento",
+        //url:"http://localhost:8080/api/Room/" + idElemento, 
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
