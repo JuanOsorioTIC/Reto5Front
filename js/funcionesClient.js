@@ -1,7 +1,7 @@
 function traerInformacionCliente(){
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Client/all",
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://158.101.116.30:8080/api/Client/all",
+        //url:"http://localhost:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -50,8 +50,8 @@ function guardarInformacionCliente(){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Client/save",
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://158.101.116.30:8080/api/Client/save",
+        //url:"http://localhost:8080/api/Client/save",
         type:'POST',
         contentType: "application/json; charset=utf-8",
         dataType: 'JSON',
@@ -80,8 +80,8 @@ function editarCliente(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Client/update",
-        url:"http://localhost:8080/api/Client/update",
+        url:"http://158.101.116.30:8080/api/Client/update",
+        //url:"http://localhost:8080/api/Client/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -105,8 +105,8 @@ function eliminarCliente(idElemento){
 
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        //url:"http://158.101.116.30:8080/api/Client/" + idElemento,
-        url:"http://localhost:8080/api/Client/"  + idElemento,
+        url:"http://158.101.116.30:8080/api/Client/" + idElemento,
+        //url:"http://localhost:8080/api/Client/"  + idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
